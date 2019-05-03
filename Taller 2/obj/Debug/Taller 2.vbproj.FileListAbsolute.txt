@@ -1,0 +1,19 @@
+C:\Users\tivn2\Documents\Visual Studio 2017\Projects\New folder\Taller 2\Taller 2\bin\Debug\Taller 2.exe.config
+C:\Users\tivn2\Documents\Visual Studio 2017\Projects\New folder\Taller 2\Taller 2\bin\Debug\Taller 2.exe
+C:\Users\tivn2\Documents\Visual Studio 2017\Projects\New folder\Taller 2\Taller 2\bin\Debug\Taller 2.pdb
+C:\Users\tivn2\Documents\Visual Studio 2017\Projects\New folder\Taller 2\Taller 2\bin\Debug\Taller 2.xml
+C:\Users\tivn2\Documents\Visual Studio 2017\Projects\New folder\Taller 2\Taller 2\obj\Debug\Taller_2.Login.resources
+C:\Users\tivn2\Documents\Visual Studio 2017\Projects\New folder\Taller 2\Taller 2\obj\Debug\Taller_2.Resources.resources
+C:\Users\tivn2\Documents\Visual Studio 2017\Projects\New folder\Taller 2\Taller 2\obj\Debug\Taller 2.vbproj.GenerateResource.cache
+C:\Users\tivn2\Documents\Visual Studio 2017\Projects\New folder\Taller 2\Taller 2\obj\Debug\Taller 2.vbproj.CoreCompileInputs.cache
+C:\Users\tivn2\Documents\Visual Studio 2017\Projects\New folder\Taller 2\Taller 2\obj\Debug\Taller 2.exe
+C:\Users\tivn2\Documents\Visual Studio 2017\Projects\New folder\Taller 2\Taller 2\obj\Debug\Taller 2.xml
+C:\Users\tivn2\Documents\Visual Studio 2017\Projects\New folder\Taller 2\Taller 2\obj\Debug\Taller 2.pdb
+C:\Users\tivn2\Documents\Visual Studio 2017\Projects\New folder\Taller 2\Taller 2\obj\Debug\Taller 2.vbprojAssemblyReference.cache
+C:\Users\tivn2\Documents\Visual Studio 2017\Projects\New folder\Taller 2\Taller 2\obj\Debug\Taller_2.Register.resources
+C:\Users\tivn2\Documents\Visual Studio 2017\Projects\New folder\Taller 2\Taller 2\bin\Debug\dje-NE\Taller 2.resources.dll
+C:\Users\tivn2\Documents\Visual Studio 2017\Projects\New folder\Taller 2\Taller 2\obj\Debug\Taller_2.Login.dje-NE.resources
+C:\Users\tivn2\Documents\Visual Studio 2017\Projects\New folder\Taller 2\Taller 2\obj\Debug\dje-NE\Taller 2.resources.dll
+C:\Users\tivn2\Documents\Visual Studio 2017\Projects\New folder\Taller 2\Taller 2\obj\Debug\Taller_2.Home.resources
+C:\Users\tivn2\Documents\Visual Studio 2017\Projects\New folder\Taller 2\Taller 2\obj\Debug\Taller_2.Add.resources
+C:\Users\tivn2\Documents\Visual Studio 2017\Projects\New folder\Taller 2\Taller 2\obj\Debug\Taller_2.Edit.resources
