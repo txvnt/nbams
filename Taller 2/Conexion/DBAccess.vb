@@ -4,7 +4,7 @@ Imports Taller_2
 Public Class DBAccess
     Implements IDB
 
-    Private ruta As String = "../../../db.accdb"
+    Private ruta As String = "C:/Access/velez_pardo.accdb"
     Private conexion As String = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & ruta & " ;Persist Security Info=False"
 
     Public Function SelectQuery(consulta As String) As DataTable Implements IDB.SelectQuery
