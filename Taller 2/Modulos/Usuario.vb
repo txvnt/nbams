@@ -3,11 +3,11 @@
     Public nombres As String
     Public apellidos As String
     Public email As String
-    Public contacto As Integer
+    Public contacto As String
     Public password As String
     Public tipo As Boolean
 
-    Public Sub New(nombreUsuario As String, nombres As String, apellidos As String, email As String, contacto As Integer, password As String, tipo As Boolean)
+    Public Sub New(nombreUsuario As String, nombres As String, apellidos As String, email As String, contacto As String, password As String, tipo As Boolean)
         Me.nombreUsuario = nombreUsuario
         Me.nombres = nombres
         Me.apellidos = apellidos
@@ -31,6 +31,6 @@
 
     Public Sub insertarUsuario()
         DB.Query(String.Format("INSERT INTO Usuario([NombreUsuario],[Nombres],[Apellidos],[Email],[Contacto],[Password],[TipoUsuario]) 
-                                VALUES ('{0}','{1}','{2}','{3}',{4},'{5}',0)", Me.nombreUsuario, Me.nombres, Me.apellidos, Me.email, Me.contacto, Me.password))
+                                VALUES ('{0}','{1}','{2}','{3}','{4}','{5}',0)", Me.nombreUsuario, Me.nombres, Me.apellidos, Me.email, Me.contacto, Me.password))
     End Sub
 End Class

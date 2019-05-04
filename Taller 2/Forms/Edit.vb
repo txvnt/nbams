@@ -12,11 +12,11 @@
         equipoEdit.id = idEquipo
         homeInstance = home
         ' Add any initialization after the InitializeComponent() call.
-        ComboBox1.SelectedText = equipoEdit.conferencia
         ComboBox1.Text = equipoEdit.conferencia
         TextBox1.Text = equipoEdit.ciudad
         TextBox2.Text = equipoEdit.nombreEquipo
         PictureBox1.ImageLocation = equipoEdit.rutaImagen
+        DataGridView1.DataSource = Equipo.obtenerJugadoresEquipo(idEquipo)
     End Sub
 
     Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
@@ -64,5 +64,9 @@
         Catch ex As Exception
             MsgBox(ex.Message)
         End Try
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+
     End Sub
 End Class

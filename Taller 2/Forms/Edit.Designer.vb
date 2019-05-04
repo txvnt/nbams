@@ -149,6 +149,9 @@ Partial Class Edit
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
+        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.DataGridView1.Location = New System.Drawing.Point(454, 62)
         Me.DataGridView1.Name = "DataGridView1"
@@ -183,6 +186,9 @@ Partial Class Edit
         Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.MaximizeBox = False
+        Me.MaximumSize = New System.Drawing.Size(844, 405)
+        Me.MinimumSize = New System.Drawing.Size(844, 405)
         Me.Name = "Edit"
         Me.Text = "Edit"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

@@ -9,6 +9,8 @@
         Dim confirm = textBox6.Text
         If contraseña <> confirm Then
             MsgBox("Las contraseñas no coinciden.")
+        ElseIf nombres = "" Or apellidos = "" Or email = "" Or nombreUsuario = "" Or contraseña = "" Or confirm = "" Or contacto = "" Then
+            MsgBox("Rellena todos los campos.")
         Else
             Dim usuario As New Usuario(nombreUsuario, nombres, apellidos, email, contacto, contraseña, False)
             usuario.insertarUsuario()

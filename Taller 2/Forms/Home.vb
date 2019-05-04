@@ -12,6 +12,9 @@
         DataGridView1.DataSource = Equipo.obtenerEquiposEste()
         DataGridView2.DataSource = Equipo.obtenerEquiposOeste()
         DataGridView3.DataSource = Equipo.obtenerTodosEquipos()
+        DataGridView1.ClearSelection()
+        DataGridView2.ClearSelection()
+        DataGridView3.ClearSelection()
         If (usuarioLog.tipo) Then
             Button1.Visible = True
             Button2.Visible = True
@@ -46,9 +49,19 @@
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Dim idEquipo As Long = DataGridView1(0, DataGridView1.CurrentRow.Index).Value
-        Dim editWindow As New Edit(idEquipo, Me)
-        editWindow.Show()
+        If DataGridView1.SelectedRows.Count = 1 Then
+            Dim idEquipo As Long = DataGridView1(0, DataGridView1.CurrentRow.Index).Value
+            Dim editWindow As New Edit(idEquipo, Me)
+            editWindow.Show()
+        ElseIf DataGridView2.SelectedRows.Count = 1 Then
+            Dim idEquipo As Long = DataGridView2(0, DataGridView2.CurrentRow.Index).Value
+            Dim editWindow As New Edit(idEquipo, Me)
+            editWindow.Show()
+        ElseIf DataGridView3.SelectedRows.Count = 1 Then
+            Dim idEquipo As Long = DataGridView3(0, DataGridView3.CurrentRow.Index).Value
+            Dim editWindow As New Edit(idEquipo, Me)
+            editWindow.Show()
+        End If
         updateTeams()
     End Sub
 
@@ -56,6 +69,9 @@
         DataGridView1.DataSource = Equipo.obtenerEquiposEste()
         DataGridView2.DataSource = Equipo.obtenerEquiposOeste()
         DataGridView3.DataSource = Equipo.obtenerTodosEquipos()
+        DataGridView1.ClearSelection()
+        DataGridView2.ClearSelection()
+        DataGridView3.ClearSelection()
     End Sub
 
 End Class

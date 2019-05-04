@@ -62,6 +62,7 @@ Partial Class Home
         Me.DataGridView1.Location = New System.Drawing.Point(31, 93)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
+        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView1.Size = New System.Drawing.Size(240, 273)
         Me.DataGridView1.TabIndex = 1
         '
@@ -74,6 +75,7 @@ Partial Class Home
         Me.DataGridView2.Location = New System.Drawing.Point(292, 93)
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.ReadOnly = True
+        Me.DataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView2.Size = New System.Drawing.Size(240, 273)
         Me.DataGridView2.TabIndex = 2
         '
@@ -86,6 +88,7 @@ Partial Class Home
         Me.DataGridView3.Location = New System.Drawing.Point(551, 93)
         Me.DataGridView3.Name = "DataGridView3"
         Me.DataGridView3.ReadOnly = True
+        Me.DataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.DataGridView3.Size = New System.Drawing.Size(240, 273)
         Me.DataGridView3.TabIndex = 3
         '

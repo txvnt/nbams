@@ -34,6 +34,11 @@
         DB.Query(String.Format("UPDATE Equipo SET Nombre = '{0}', Ciudad = '{1}', Conferencia = '{2}', RutaImagen = '{3}' WHERE Id={4}", Me.nombreEquipo, Me.ciudad, Me.conferencia, Me.rutaImagen, Me.id))
     End Sub
 
+    Public Shared Function obtenerJugadoresEquipo(idEquipo As String) As DataTable
+        Dim tabla = DB.SelectQuery(String.Format("SELECT Id,Nombre,Apellido,Titular,Posicion FROM Jugador j WHERE j.CodEquipoPertenece = {0}", idEquipo))
+        Return tabla
+    End Function
+
     Public Shared Function obtenerEquiposEste() As DataTable
         Dim tabla = DB.SelectQuery(String.Format("SELECT Id,Nombre,Ciudad FROM Equipo eq WHERE eq.Conferencia = 'Este'"))
         Return tabla
