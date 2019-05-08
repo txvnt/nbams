@@ -48,6 +48,25 @@
         DataGridView2.ClearSelection()
     End Sub
 
+    'Ver info equipo'
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        If DataGridView1.SelectedRows.Count = 1 Then
+            Dim idEquipo As Long = DataGridView1(0, DataGridView1.CurrentRow.Index).Value
+            Dim teamInfo As New TeamInfo(idEquipo, Me, usuarioLog)
+            teamInfo.Show()
+        ElseIf DataGridView2.SelectedRows.Count = 1 Then
+            Dim idEquipo As Long = DataGridView2(0, DataGridView2.CurrentRow.Index).Value
+            Dim teamInfo As New TeamInfo(idEquipo, Me, usuarioLog)
+            teamInfo.Show()
+        ElseIf DataGridView3.SelectedRows.Count = 1 Then
+            Dim idEquipo As Long = DataGridView3(0, DataGridView3.CurrentRow.Index).Value
+            Dim teamInfo As New TeamInfo(idEquipo, Me, usuarioLog)
+            teamInfo.Show()
+        End If
+        updateTeams()
+    End Sub
+
+    'Editar Equipo'
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         If DataGridView1.SelectedRows.Count = 1 Then
             Dim idEquipo As Long = DataGridView1(0, DataGridView1.CurrentRow.Index).Value
@@ -74,4 +93,8 @@
         DataGridView3.ClearSelection()
     End Sub
 
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim matches As New Matches()
+        matches.Show()
+    End Sub
 End Class

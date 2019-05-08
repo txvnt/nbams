@@ -81,10 +81,28 @@
     <Compile Include="Forms\Add.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\AddPlayer.Designer.vb">
+      <DependentUpon>AddPlayer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AddPlayer.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Edit.Designer.vb">
       <DependentUpon>Edit.vb</DependentUpon>
     </Compile>
     <Compile Include="Forms\Edit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Matches.Designer.vb">
+      <DependentUpon>Matches.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Matches.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TeamInfo.Designer.vb">
+      <DependentUpon>TeamInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TeamInfo.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\Home.Designer.vb">
@@ -108,6 +126,7 @@
     </Compile>
     <Compile Include="Modulos\Auth.vb" />
     <Compile Include="Modulos\Equipo.vb" />
+    <Compile Include="Modulos\Jugador.vb" />
     <Compile Include="Modulos\Partido.vb" />
     <Compile Include="Modulos\Usuario.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -130,8 +149,17 @@
     <EmbeddedResource Include="Forms\Add.resx">
       <DependentUpon>Add.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AddPlayer.resx">
+      <DependentUpon>AddPlayer.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\Edit.resx">
       <DependentUpon>Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Matches.resx">
+      <DependentUpon>Matches.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TeamInfo.resx">
+      <DependentUpon>TeamInfo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Home.resx">
       <DependentUpon>Home.vb</DependentUpon>

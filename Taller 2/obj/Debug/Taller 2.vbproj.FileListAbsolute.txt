@@ -36,3 +36,6 @@ C:\Users\tivn2\Documents\GitHub\nbams\Taller 2\obj\Debug\dje-NE\Taller 2.resourc
 C:\Users\tivn2\Documents\GitHub\nbams\Taller 2\obj\Debug\Taller 2.exe
 C:\Users\tivn2\Documents\GitHub\nbams\Taller 2\obj\Debug\Taller 2.xml
 C:\Users\tivn2\Documents\GitHub\nbams\Taller 2\obj\Debug\Taller 2.pdb
+C:\Users\tivn2\Documents\GitHub\nbams\Taller 2\obj\Debug\Taller_2.AddPlayer.resources
+C:\Users\tivn2\Documents\GitHub\nbams\Taller 2\obj\Debug\Taller_2.TeamInfo.resources
+C:\Users\tivn2\Documents\GitHub\nbams\Taller 2\obj\Debug\Taller_2.Matches.resources
