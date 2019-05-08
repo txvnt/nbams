@@ -5,12 +5,12 @@
         Else
             DB.db = New DBAccess
         End If
-        Me.Dispose(False)
+        Me.Dispose(false)
         Login.Show()
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-        MsgBox("Ganaste un ipad", "Ganaste")
+        MsgBox("Ganaste un ipad", , "Ganaste")
     End Sub
 
     Private Sub SeleccionBD_Activated(sender As Object, e As EventArgs) Handles Me.Activated

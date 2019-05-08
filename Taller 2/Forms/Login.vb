@@ -31,14 +31,6 @@
         register.Show()
     End Sub
 
-    Private Sub label1_Click(sender As Object, e As EventArgs) Handles label1.Click
-
-    End Sub
-
-    Private Sub textBox1_TextChanged(sender As Object, e As EventArgs) Handles textBox1.TextChanged
-
-    End Sub
-
     Private Sub Login_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
         Application.Exit()
     End Sub
