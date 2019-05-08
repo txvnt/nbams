@@ -1,7 +1,7 @@
 ﻿Imports Npgsql
 Public Class DBPostgres
     Implements IDB
-    Private conexion As String = "Server=localhost;Port=5432;Database=laboratorio_2019;User Id=postgres;Password=postgres"
+    Private conexion As String = "Server=localhost;Port=5432;Database=velez_pardo;User Id=postgres;Password=postgres"
     Private connection As New NpgsqlConnection
 
     Public Sub New()

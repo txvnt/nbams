@@ -9,9 +9,16 @@
     End Sub
 
     Public Function Login() As Boolean
-        Dim tabla = DB.SelectQuery(String.Format("SELECT count(*)
+        Dim tabla As DataTable
+        If DB.dbUsed Then
+            Tabla = DB.SelectQuery(String.Format("SELECT count(*)
                                                     FROM Usuario
                                                     WHERE NombreUsuario LIKE '{0}' AND Password LIKE '{1}'", Me.nombreUsuario, Me.password))
+        Else
+            tabla = DB.SelectQuery((String.Format("SELECT count(*)
+                                                    FROM Usuario
+                                                    WHERE " + " NombreUsuario " + "LIKE '{0}' AND " + " Password " + "LIKE '{1}'", Me.nombreUsuario, Me.password)))
+        End If
         Return tabla.Rows(0).Item(0) > 0
     End Function
 End Class
