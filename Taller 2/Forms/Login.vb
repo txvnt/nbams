@@ -1,7 +1,7 @@
 ﻿Public Class Login
 
     Private Sub Login_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        SeleccionBD.Show()
+
     End Sub
 
     ''' Boton Ingresar
@@ -37,5 +37,9 @@
 
     Private Sub textBox1_TextChanged(sender As Object, e As EventArgs) Handles textBox1.TextChanged
 
+    End Sub
+
+    Private Sub Login_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+        Application.Exit()
     End Sub
 End Class
