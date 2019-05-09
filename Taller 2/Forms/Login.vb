@@ -15,6 +15,7 @@
         Else
             If auth.Login() Then
                 Auth.usuarioLogeado = username
+                DB.db = New DBAccess
                 Dim home As New Home(Auth.usuarioLogeado)
                 home.Show()
             Else
