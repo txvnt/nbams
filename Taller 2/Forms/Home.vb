@@ -2,8 +2,6 @@
 
     Private usuarioLog As Usuario
 
-
-
     Sub New(nombreUsuario As String)
         ' This call is required by the designer.
         InitializeComponent()
@@ -12,6 +10,11 @@
         DataGridView1.DataSource = Equipo.obtenerEquiposEste()
         DataGridView2.DataSource = Equipo.obtenerEquiposOeste()
         DataGridView3.DataSource = Equipo.obtenerTodosEquipos()
+
+        DataGridView1.Sort(DataGridView1.Columns(3), System.ComponentModel.ListSortDirection.Descending)
+        DataGridView2.Sort(DataGridView2.Columns(3), System.ComponentModel.ListSortDirection.Descending)
+        DataGridView3.Sort(DataGridView3.Columns(4), System.ComponentModel.ListSortDirection.Descending)
+
         DataGridView1.ClearSelection()
         DataGridView2.ClearSelection()
         DataGridView3.ClearSelection()
@@ -91,10 +94,19 @@
         DataGridView1.ClearSelection()
         DataGridView2.ClearSelection()
         DataGridView3.ClearSelection()
+
+        DataGridView1.Sort(DataGridView1.Columns(3), System.ComponentModel.ListSortDirection.Descending)
+        DataGridView2.Sort(DataGridView2.Columns(3), System.ComponentModel.ListSortDirection.Descending)
+        DataGridView3.Sort(DataGridView3.Columns(4), System.ComponentModel.ListSortDirection.Descending)
     End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Dim matches As New Matches()
         matches.Show()
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Dim simulate As New Simulate(Me)
+        simulate.Show()
     End Sub
 End Class

@@ -171,3 +171,5 @@ C:\Users\Brian\Documents\GitHub\nbams\Taller 2\obj\Debug\Taller 2.vbproj.CopyCom
 C:\Users\Brian\Documents\GitHub\nbams\Taller 2\obj\Debug\Taller 2.exe
 C:\Users\Brian\Documents\GitHub\nbams\Taller 2\obj\Debug\Taller 2.xml
 C:\Users\Brian\Documents\GitHub\nbams\Taller 2\obj\Debug\Taller 2.pdb
+
+C:\Users\tivn2\Documents\GitHub\nbams\Taller 2\obj\Debug\Taller_2.Simulate.resources

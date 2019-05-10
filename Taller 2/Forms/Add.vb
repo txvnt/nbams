@@ -48,7 +48,7 @@
         If TextBox1.Text = "" Or TextBox2.Text = "" Or rutaImagen = "" Then
             MsgBox("Rellena todos los campos.")
         Else
-            Dim equipo As New Equipo(nombre, ciudad, conferencia, rutaImagen)
+            Dim equipo As New Equipo(nombre, ciudad, conferencia, rutaImagen, 0, 0)
             equipo.agregarEquipo()
             MsgBox("Equipo agregado.")
             Me.Close()

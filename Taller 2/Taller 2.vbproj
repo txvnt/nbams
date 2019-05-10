@@ -116,6 +116,12 @@
     <Compile Include="Forms\Edit.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Forms\Simulate.Designer.vb">
+      <DependentUpon>Simulate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Simulate.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Forms\Matches.Designer.vb">
       <DependentUpon>Matches.vb</DependentUpon>
     </Compile>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Edit.resx">
       <DependentUpon>Edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Simulate.resx">
+      <DependentUpon>Simulate.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Matches.resx">
       <DependentUpon>Matches.vb</DependentUpon>

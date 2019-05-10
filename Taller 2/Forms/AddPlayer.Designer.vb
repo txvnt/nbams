@@ -123,6 +123,7 @@ Partial Class AddPlayer
         Me.DataGridView1.MaximumSize = New System.Drawing.Size(388, 302)
         Me.DataGridView1.MinimumSize = New System.Drawing.Size(388, 302)
         Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.Size = New System.Drawing.Size(388, 302)
         Me.DataGridView1.TabIndex = 37
         '
