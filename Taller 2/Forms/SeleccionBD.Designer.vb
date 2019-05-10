@@ -29,19 +29,23 @@ Partial Class SeleccionBD
         '
         'ListBox1
         '
+        Me.ListBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 20
+        Me.ListBox1.ItemHeight = 24
         Me.ListBox1.Items.AddRange(New Object() {"Postgres", "Access"})
-        Me.ListBox1.Location = New System.Drawing.Point(71, 131)
+        Me.ListBox1.Location = New System.Drawing.Point(17, 110)
+        Me.ListBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(158, 44)
+        Me.ListBox1.Size = New System.Drawing.Size(262, 52)
         Me.ListBox1.TabIndex = 1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(173, 294)
+        Me.Button1.Font = New System.Drawing.Font("Bebas Neue", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(17, 185)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(109, 48)
+        Me.Button1.Size = New System.Drawing.Size(262, 57)
         Me.Button1.TabIndex = 2
         Me.Button1.Text = "Seleccionar"
         Me.Button1.UseVisualStyleBackColor = True
@@ -49,22 +53,27 @@ Partial Class SeleccionBD
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(26, 79)
+        Me.Label1.Font = New System.Drawing.Font("Bebas Neue", 21.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(11, 28)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(256, 20)
+        Me.Label1.Size = New System.Drawing.Size(196, 70)
         Me.Label1.TabIndex = 3
-        Me.Label1.Text = "Seleccione la base de datos a usar"
+        Me.Label1.Text = "Seleccione la base" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "de datos a usar"
         '
         'SeleccionBD
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(303, 354)
+        Me.ClientSize = New System.Drawing.Size(302, 263)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ListBox1)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.MaximumSize = New System.Drawing.Size(318, 302)
+        Me.MinimumSize = New System.Drawing.Size(318, 302)
         Me.Name = "SeleccionBD"
-        Me.Text = "SeleccionBD"
+        Me.Text = "Seleccion base de datos"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
