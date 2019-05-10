@@ -15,6 +15,7 @@
         Else
             If auth.Login() Then
                 Auth.usuarioLogeado = username
+                DB.db = New DBAccess
                 Dim home As New Home(Auth.usuarioLogeado)
                 home.Show()
             Else
@@ -31,11 +32,7 @@
         register.Show()
     End Sub
 
-    Private Sub label1_Click(sender As Object, e As EventArgs) Handles label1.Click
-
-    End Sub
-
-    Private Sub textBox1_TextChanged(sender As Object, e As EventArgs) Handles textBox1.TextChanged
-
+    Private Sub Login_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+        Application.Exit()
     End Sub
 End Class

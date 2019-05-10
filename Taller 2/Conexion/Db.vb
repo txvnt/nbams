@@ -1,7 +1,6 @@
 ﻿Public Class DB
-
-    Private Shared db As IDB = New DBAccess
-
+    Public Shared db As IDB
+    Public Shared dbUsed As Boolean
     Public Shared Function SelectQuery(consulta As String) As DataTable
         Return db.SelectQuery(consulta)
 
