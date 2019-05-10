@@ -15,6 +15,8 @@
         Label5.Text = equipoInfo.conferencia
         Label6.Text = equipoInfo.ciudad
         Label2.Text = equipoInfo.nombreEquipo
+        Label7.Text = equipoInfo.victorias
+        Label8.Text = equipoInfo.derrotas
         PictureBox1.ImageLocation = equipoInfo.rutaImagen
         DataGridView1.DataSource = Equipo.obtenerJugadoresEquipo(idEquipo)
         If user.tipo Then
@@ -40,5 +42,13 @@
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Me.Close()
+    End Sub
+
+    Private Sub Label7_Click(sender As Object, e As EventArgs) Handles Label7.Click
+
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+
     End Sub
 End Class
